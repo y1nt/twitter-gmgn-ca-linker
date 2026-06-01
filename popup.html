@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter GMGN Quick Trade</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      body {
+        margin: 0;
+        width: 320px;
+        padding: 14px;
+        background: #f5f8ff;
+        color: #0f172a;
+      }
+      .header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 15px;
+      }
+      .author {
+        flex: 0 0 auto;
+        font-size: 11px;
+        color: #64748b;
+        white-space: nowrap;
+      }
+      label {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+      select {
+        width: 100%;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 13px;
+        background: white;
+      }
+      p {
+        margin: 10px 0 0;
+        font-size: 12px;
+        color: #475569;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Twitter GMGN 跳转</h1>
+      <div class="author">作者:Y1nt_阴天</div>
+    </div>
+    <label for="gmgnChain">GMGN</label>
+    <select id="gmgnChain">
+      <option value="bsc">BSC</option>
+      <option value="eth">Ethereum</option>
+      <option value="base">Base</option>
+    </select>
+    <p>默认使用 BSC。切换后刷新 X/Twitter 页面即可生效。</p>
+    <script src="popup.js"></script>
+  </body>
+</html>

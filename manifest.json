@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter GMGN Quick Trade",
+  "version": "0.1.0",
+  "description": "Detect EVM contract addresses in X/Twitter posts and open GMGN token pages in one click.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Twitter GMGN Quick Trade",
+    "default_popup": "popup.html"
+  }
+}

@@ -23,7 +23,7 @@ A Chrome/Edge extension that detects EVM contract addresses on X/Twitter and tur
 * The default chain is BSC because GMGN URLs require a chain name. If the token in the tweet is not on BSC, switch the chain in the extension popup.
 * After modifying the extension code, click the refresh button on the extensions page, then refresh the X/Twitter page.
 
-# Twitter GMGN Quick Trade
+![Demo](screenshots/demo.png)
 
 在 X/Twitter 页面识别 EVM 合约地址，并把地址本身变成 GMGN 可点击链接。
 
